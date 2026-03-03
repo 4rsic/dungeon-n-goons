@@ -231,63 +231,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &274979038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 274979040}
-  - component: {fileID: 274979039}
-  m_Layer: 0
-  m_Name: testObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &274979039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274979038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7066bf13b851d74c845a4ee8f69da5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::statsheet
-  maxHealth: 250
-  health: 250
-  maxMana: 140
-  mana: 140
-  vitality: 6
-  strength: 6
-  agility: 6
-  luck: 6
-  intelligence: 6
-  mind: 6
-  religion: 6
-  speed: 0
-  playerclass: 0
---- !u!4 &274979040
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274979038}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.97291, y: 0.99, z: 3.11569}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,19 +615,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8737ab0b68dda734ca1286f50144ba55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerStats
-  maxHealth: 250
-  health: 250
-  maxMana: 140
-  mana: 140
-  vitality: 6
-  strength: 6
-  agility: 6
+  maxHealth: 323.1
+  health: 323.1
+  maxMana: 145.4
+  mana: 145.4
+  vitality: 11
+  strength: 9
+  agility: 3
   luck: 6
-  intelligence: 6
-  mind: 6
+  intelligence: 3
+  mind: 5
   religion: 6
-  speed: 0
-  playerclass: 0
+  speed: 5
+  pclass: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,4 +1224,3 @@ SceneRoots:
   - {fileID: 1676910018}
   - {fileID: 1908582327}
   - {fileID: 736847857}
-  - {fileID: 274979040}
