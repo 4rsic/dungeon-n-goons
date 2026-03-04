@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class playermvmt : MonoBehaviour
+public class playermvmt : playerStats
 {
-    [SerializeField]
-    private float speed = 5f;
+    //[SerializeField]
+    //private float speed = 5f;
 
     [SerializeField]
     private float mouseSens = 2f;

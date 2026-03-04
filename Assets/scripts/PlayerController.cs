@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : playerStats
 {
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private bool shouldFaceMoveDir = false;
 
-    [SerializeField] private float speed = 5f;
+    //[SerializeField] private float speed = 5f;
     [SerializeField] private float jumpHeight = 2f;
     [SerializeField] private float gravity = -9.8f;
 

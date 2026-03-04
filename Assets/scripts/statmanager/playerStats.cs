@@ -11,7 +11,7 @@ public class playerStats : statsheet
         health = maxHealth;
         maxMana = (float)(100f + (mind * 6.5) + (4.3 * intelligence));
         mana = maxMana;
-        speed = 4f + Mathf.Ceil(1 * agility / 6);
+        speed = 4f + (float)(0.6 * agility / 6);
         Debug.Log(speed);
     }
 
