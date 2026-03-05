@@ -3,12 +3,6 @@ using UnityEngine;
 public class statsheet : MonoBehaviour
 {
 
-    [Header("Player Bars")]
-    public float maxHealth = 250f;
-    public float health = 250f;
-    public float maxMana = 140f;
-    public float mana = 140f;
-
     // IMPLEMENT STAMINA IF NEEDED LATER ON
 
     [Header("Player Stats")]
@@ -23,11 +17,6 @@ public class statsheet : MonoBehaviour
     public int religion = 6; // increases user's affinity from the deities, specifically useful for paladin or religious cleric/medic, reaching X in religion will unlock deity you can pick and get stat bonuses/skills from
     
     // kms 
-
-    [Header("Movement Changes")]
-
-    public float speed = 4f; // affected by agi and class 
-
     public enum charClass 
     {
         Paladin,

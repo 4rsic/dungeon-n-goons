@@ -1,8 +1,9 @@
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class PlayerController : playerStats
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private bool shouldFaceMoveDir = false;
@@ -77,7 +78,13 @@ public class PlayerController : playerStats
         Debug.Log("We are NOT sprinting!");
 
     }
-   
+
+    private playerStats stats;
+
+    public void OnValidate()
+    {
+        stats = GetComponent<playerStats>();
+    }
 
     // Update is called once per frame
     private void Update()
@@ -92,19 +99,19 @@ public class PlayerController : playerStats
         right.Normalize();
 
         Vector3 moveDirection = forward * moveInput.y + right * moveInput.x;
-
         
 
+        
         if (isSprinting)
         {
 
-            controller.Move(moveDirection * (speed * sprintSpeed) * Time.deltaTime);
+            controller.Move(moveDirection * (stats.speed * sprintSpeed) * Time.deltaTime);
 
         }
         else
         {
 
-            controller.Move(moveDirection * speed * Time.deltaTime);
+            controller.Move(moveDirection * stats.speed * Time.deltaTime);
 
         }
         

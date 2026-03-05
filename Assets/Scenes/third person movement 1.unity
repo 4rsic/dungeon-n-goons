@@ -370,10 +370,10 @@ GameObject:
   - component: {fileID: 736847860}
   - component: {fileID: 736847859}
   - component: {fileID: 736847858}
+  - component: {fileID: 736847864}
   - component: {fileID: 736847861}
   - component: {fileID: 736847863}
   - component: {fileID: 736847862}
-  - component: {fileID: 736847864}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -489,19 +489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9734401db6c50ab44b461cd2848e39eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  maxHealth: 311
-  health: 311
-  maxMana: 160.5
-  mana: 160.5
-  vitality: 10
-  strength: 8
-  agility: 4
-  luck: 8
-  intelligence: 5
-  mind: 6
-  religion: 10
-  speed: 4.4
-  pclass: 0
   cameraTransform: {fileID: 1908582327}
   shouldFaceMoveDir: 1
   jumpHeight: 1.12
@@ -627,19 +614,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8737ab0b68dda734ca1286f50144ba55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerStats
-  maxHealth: 311
-  health: 311
-  maxMana: 160.5
-  mana: 160.5
-  vitality: 10
-  strength: 8
-  agility: 4
-  luck: 8
-  intelligence: 5
-  mind: 6
-  religion: 10
-  speed: 4.4
-  pclass: 0
+  vitality: 11
+  strength: 9
+  agility: 3
+  luck: 6
+  intelligence: 3
+  mind: 5
+  religion: 6
+  pclass: 1
+  maxHealth: 323.1
+  health: 323.1
+  maxMana: 145.4
+  mana: 145.4
+  speed: 4.8
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
